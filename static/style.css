@@ -1,0 +1,112 @@
+body{
+    font-family: "Garamond", arial, sans-serif; font-size: 16px;
+    
+  }
+  
+  .book {
+    border: 3px solid rgb(236, 181, 1);
+    width: 250px;
+    min-height: 68px;
+    padding: 10px;
+    display: flex;
+    line-height: 18px;
+    margin-bottom: 10px;
+    /* margin-right: 20px; */
+    background-color: lightgoldenrodyellow;
+    /* justify-content: center; */
+    justify-items: center;
+    
+  }
+  
+
+
+
+  .name {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+  }
+  
+  .genre{
+    color: #589770;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 1.4em;
+    color: #aab8c2;
+  }
+  
+  .buttons i {
+    width: 80px;
+  }
+  
+  input, select, button {
+    font-size: 100%;
+    width : 100%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .trash-button{
+    display: contents;
+    font-size: 65%;
+  }
+  
+  
+  .delete-form{
+    display: inline;
+  }
+  
+  .menu{
+    display: flex;
+    padding: 20px;
+    background-color: #589770;
+    color: white;
+    border-style:double;
+    border-color: rgb(236, 181, 1);
+    border-width: 5px;
+    justify-content: center;
+  }
+  
+  .menu li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu li a:visited{
+    color: white;
+  }
+  
+  .menu li{
+    padding-right: 30px;
+    list-style: none;
+    color: white;
+    font-family: garamond, arial, sans-serif; font-size: 14px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .home-content{
+    font-family: garamond, arial, sans-serif; font-size: 16px;
+    margin: 20px;
+    padding: 30px;
+    font-style: italic;
+    background-color:#589770;
+    border: 3px;
+    border-style: double;
+    border-color:rgb(236, 181, 1);
+    color: white;
+    width: 250px;
+  }

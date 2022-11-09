@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="home-content">
+Welcome to The Codeclan Library that exclusively has books written by:
+{% for author in all_authors%}
+{% if all_authors[-1] == author %}
+<span>{{author.author_name}}.</span>
+{% else %}
+<span>{{author.author_name}}, and  </span>
+
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}
