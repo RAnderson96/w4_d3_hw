@@ -43,3 +43,26 @@ def create_book():
     book = Book(title, author, genre)
     book_repository.save(book)
     return redirect('/books')
+
+
+@books_blueprint.route("/books/<id>/edit")
+def edit_book(id):
+    book=book_repository.select(id)
+    author = author_repository.select_all()
+    return render_template('books/edit.html', book = book, all_authors = author)
+
+
+# UPDATE
+# PUT '/tasks/<id>'
+
+@books_blueprint.route("/books/<id>", methods=['POST'])
+def update_book():
+    title = request.form['title']
+    author_id = request.form['author_id']
+    genre = request.form['genre']
+    
+    author = author_repository.select(author_id)
+    book = Book(title, author, genre)
+    book_repository.update(book)
+    return redirect('/books')
+ 
